@@ -1,0 +1,189 @@
+.section-contact{
+    background-color: #F7F7F7;
+    padding: 4% 0;
+}
+.section-contact__wrapper{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.section-contact__info-wrapper{
+    margin-top: 4%;
+    display: flex;
+}
+.section-contact__info-box{
+    border-right: 1px solid #DDDDDD;
+    padding: 1.7% 6% 2% 5%;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+.section-contact__info-box:last-child{
+    border:none;
+}
+.section-contact__info-box i{
+    font-size: 2.5vw;
+    color:#18d26e;
+}
+.section-contact__info-box-title{
+    color:#999999;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    font-size: 1vw; 
+}
+.section-contact__info-box-infos a:link, .section-contact__info-box-infos a:visited{
+    transition: .3s;
+    text-decoration: none;
+    color:black;
+    font-size: 0.8vw;
+}
+.section-contact__info-box-infos a:hover, .section-contact__info-box-infos a:active{
+    color:#18d26e;
+}
+.section-contact__form-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.section-contact__form-wrapper form{
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact__form-name-email-wrap{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.7%;
+}
+.section-contact__form-name-email-wrap input{
+    width: 50%;
+    padding:.7% .9%;
+    margin-right: 2%;
+    border:1px solid #CED4DA;
+    outline-color: #18d26e;
+}
+.section-contact__form-name-email-wrap input:last-child{
+    
+    margin-right: 0;
+}
+.section-contact__form-name-email-wrap input::placeholder{
+    font-size: .76vw;
+}
+
+.section-contact__subject-input{
+    margin-bottom: 1.7%;
+    padding: .9% .9%;
+    border:1px solid #CED4DA;
+    outline-color: #18d26e;
+}
+.section-contact__subject-input::placeholder{
+    font-size: .76vw;
+}
+.section-contact__textarea{
+    margin-bottom: 1.7%;
+    padding: .7% .9%;
+    border:1px solid #CED4DA;
+    outline-color: #18d26e;
+}
+.section-contact__textarea::placeholder{
+    font-size: .76vw;
+}
+.section-contact__submit-btn{
+    width: 15%;
+    margin: 0 auto;
+    background: #18d26e;
+    padding: 1% 0;
+    border:none;
+    color: white;
+    font-size: .87vw;
+    cursor: pointer;
+    transition: .3s;
+}
+.section-contact__submit-btn:hover{
+    background: #1fa85f;
+}
+
+@media(max-width: 767.98px) {
+    .section-contact{
+        padding: 5% 0;
+    }
+    .section-contact__wrapper{
+        width: 70%;
+    }
+    .section-contact__info-wrapper{
+        flex-direction: column;
+    }
+    .section-contact__info-box{
+        border-right: none;
+        padding: 1.7% 6% 2% 5%;
+        width: 100%;
+    }
+    .section-contact__info-box i{
+        font-size: 30px;
+    }
+    .section-contact__info-box-title{
+        margin-bottom: 3%;
+        margin-top: 4%;
+        font-size: 20px; 
+    }
+    .section-contact__info-box-infos a:link, .section-contact__info-box-infos a:visited{
+        font-size: 14px;
+    }
+    .section-contact__form-name-email-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-contact__form-name-email-wrap input{
+        width: 100%;
+        padding: 2% 2%;
+    }
+    .section-contact__form-name-email-wrap input:first-child{
+        width: 100%;
+        margin-bottom: 1.7%;
+    }
+    .section-contact__form-name-email-wrap input::placeholder{
+        font-size: 14px;
+    }
+    .section-contact__subject-input{
+        padding: 2% 2%;
+    }
+    .section-contact__subject-input::placeholder{
+        font-size: 14px;
+    }
+    .section-contact__textarea{
+        padding: 2% 2%;
+    }
+    .section-contact__textarea::placeholder{
+        font-size: 14px;
+    }
+    .section-contact__submit-btn{
+        width: 35%;
+        padding: 2% 3%;
+        font-size: 14px;
+        margin-top: 1%;
+    }
+}
+
+@media(max-width: 575.98px){
+    .section-contact{
+        padding: 10% 0;
+    }
+    .section-contact__wrapper{
+        width: 90%;
+    }
+    .section-contact__info-box-title{
+        margin-bottom: 2%;
+        margin-top: 3%;
+        font-size: 18px; 
+    }
+    .section-contact__form-wrapper{
+        margin-top: 8%;
+    }
+    .section-contact__submit-btn{
+        width: 50%;
+        padding: 2% 3%;
+        font-size: 14px;
+        margin-top: 3%;
+    }
+}

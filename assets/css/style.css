@@ -1,0 +1,23 @@
+@import './services.css';
+@import './aboutUs.css';
+@import './header.css';
+@import './reusableClasses.css';
+@import './callToAction.css';
+@import './ourSkills.css';
+@import './facts.css';
+@import './portfolio.css';
+@import './ourClients.css';
+@import './testimonials.css';
+@import './team.css';
+@import './contactUs.css';
+@import './footer.css';
+@import './animations.css';
+
+*,
+*::after,
+*::before {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

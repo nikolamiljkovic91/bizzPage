@@ -1,0 +1,137 @@
+.section-team{
+    padding: 4% 0;
+}
+.section-team__wrapper{
+    width:60%;
+    margin:0 auto;
+    text-align: center;
+}
+.section-team__content{
+    display: flex;
+    margin-top:4%;
+}
+.team-member__container{
+    width: 25%;
+    position: relative;
+    margin-right: 3%;
+}
+.team-member__container:last-child{
+    margin:0;
+}
+.team-member__container:hover .team-member__content{
+    visibility: visible;
+    margin-top: 0;
+    opacity: 1;
+    height: 100%;
+}
+
+.team-member__container img{
+    height: 100%;
+    width: 100%;
+    filter:sepia(10%);
+    border-radius: 2px;
+}
+.team-member__content{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    color:white;
+    transition: .2s ease;
+    
+}
+.team-member__name{
+    font-size:1.1vw;
+  
+}
+.team-member__job{
+    font-style: italic;
+    font-weight: 100;
+    font-size: .8vw;
+    margin-bottom: 8%;
+   
+}
+.social-networks__wrapper{
+display: flex;
+width: 60%;
+margin:0 auto;
+justify-content: space-evenly;
+}
+.social-networks__wrapper a {
+    text-decoration: none;
+    color: white;
+}
+.social-networks__wrapper i {
+    font-size: 1.2vw;
+    transition: .3s;
+}
+.social-networks__wrapper i:hover{
+    color:#18d26e;
+}
+
+@media(max-width: 767.98px) {
+    .section-team{
+        padding: 5% 0;
+    }
+    .section-team__wrapper{
+        width:70%;
+    }
+    .section-team__content{
+        flex-direction: column;
+        margin-top:4%;
+    }
+    .team-member__container{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .team-member__container:hover .team-member__content{
+        height: 99%;
+    }
+    .team-member__name{
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+    .team-member__job{
+        font-size: 12px;
+    }
+    .social-networks__wrapper{
+        width: 30%;
+        margin:0 auto;
+        justify-content: space-around;
+        }
+    .social-networks__wrapper i {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 575.98px){
+    .section-team{
+        padding: 10% 0;
+    }
+    .section-team__wrapper{
+        width:90%;
+    }
+    .section-team__content{
+        margin-top:7%;
+    }
+    .team-member__container{
+        margin-bottom: 4%;
+    }
+    .social-networks__wrapper{
+        width: 40%;
+        margin:0 auto;
+        justify-content: space-around;
+    }
+    .team-member__job{
+        margin-bottom: 5%;
+    }
+}
+

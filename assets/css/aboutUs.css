@@ -1,0 +1,123 @@
+  .section-about {
+    background-attachment: fixed;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+      url("../img/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 0;
+  }
+  
+  .section-about__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+  }
+  
+  .section-about__cards__card {
+    width: 33%;
+    background-color: white;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 4px 4px;
+    margin-right: 3%;
+  }
+  .section-about__cards__card:hover .section-about__cards__card-icon {
+    background: white;
+  }
+  .section-about__cards__card:hover .section-about__cards__card-icon i {
+    color: #18d26e;
+  }
+  .section-about__cards__card:last-child {
+    margin-right: 0;
+  }
+  
+  .section-about__cards__card-img {
+    position: relative;
+    height: 50%;
+  }
+  .section-about__cards__card-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-about__cards__card-icon {
+    background-color: #18d26e;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -11.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1% 3.7% 1% 3.7%;
+  
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .section-about__cards__card-icon i {
+    font-size: 1.8vw;
+    color: white;
+    font-weight: 600;
+  }
+  .section-about__cards__card-description {
+    padding: 10% 5.6% 4% 5.6%;
+  }
+  .section-about__cards__card-description p {
+    text-align: left;
+    font-size: 0.74vw;
+    font-weight: 400;
+    line-height: 1.3vw;
+    margin-top: 4%;
+  }
+
+
+  @media(max-width: 767.98px) {
+    .section-about {
+      padding: 5% 0;
+    }
+  .section-about__cards {
+      flex-direction: column;
+    }
+  .section-about__cards__card {
+      width: 100%;
+      margin-bottom: 4%;
+    }
+    .section-about__cards__card-icon {
+      border-radius: 50%;
+      margin-top: -7%;
+      padding: 3% 4% 3% 4%;
+    }
+    .section-about__cards__card-icon i {
+      font-size: 18px;
+    }
+    .section-about__cards__card-description {
+      padding: 6% 2%;
+    }
+    .section-about__cards__card-description p {
+      font-size: 12px;
+      line-height: 150%;
+    }
+  }
+
+  @media(max-width: 575.98px){
+    .section-about {
+      padding: 10% 0;
+    }
+    .section-about__cards__card {
+      width: 100%;
+      margin-bottom: 6%;
+    }
+    .section-about__cards__card-icon {
+      margin-top: -8%;
+    }
+  }
+
+  @media(max-width: 480px){
+    .section-about__cards__card-description {
+      margin-top: 2%;
+    }
+  }
+  
